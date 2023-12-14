@@ -9,7 +9,7 @@ body{
 
 .container{
   width: 380px;
-  height: 565px;
+  height: 585px;
   border-radius: 15px;
   background-color: #f1f9fb;
   box-shadow: 0px 10px 15px 5px #74b2ed;
@@ -104,10 +104,11 @@ color: #275ebb;
   border: 1px solid  #6fabdd;
   padding: 0px 3px;
   width: 148px;
-  margin: 4px 10px;
+  margin: 8px 10px;
   position: relative;
   bottom: 80px;
   box-shadow: 5px 5px 5px rgb(186, 184, 184) ;
+  border-radius: 10px;
 }
 
 .error{
@@ -118,17 +119,54 @@ color: #275ebb;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 375px;
+  height: 200px;
   width: 380px;
   z-index: 99;
   border-radius: 15px;
   top: 233px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 430px) {
   body {
-    height: auto;
+    height: 565px;
+    background-color: #fefffe;
+  }
+  .container{
+    width: 428px;
+    margin-top: 300px;
+    height: 595px;
     
+  }
+  .error{
+    top: 335px;
+    width: 428px;
+  }
+}
+@media only screen and (max-width: 414px) {
+
+  .container{
+    width: 412px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  
+  .container{
+    width: 390px;
+    margin-top: 250px;
+  }
+  .error{
+    width: 375px;
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .container{
+    width: 360px;
+    margin-top: 160px;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 542px)  {
+  .error{
+    top: 700px;
+  }
+}
